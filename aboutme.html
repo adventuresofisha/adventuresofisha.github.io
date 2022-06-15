@@ -1,1 +1,183 @@
-Test
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      
+* {
+  box-sizing: border-box;
+}
+      
+.box {
+  float: left;
+  width: 100%;
+  padding: 50px;
+}
+      
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  background: lavenderblush;
+}
+
+.header {
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  text-align: center;
+  background: floralwhite;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: 'Courier New', monospace;
+}
+ 
+.header h2 {
+  font-family: 'Courier New', monospace;
+  padding: 20 px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #778899;
+}
+
+.topnav a {
+  float: left;
+  width: 100%;
+  display: block;
+  color: black;
+  background-color: #e2e2e2;
+  text-align: center;
+  margin: auto;
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #696969;
+  color: #DCDCDC;
+}
+
+.leftcolumn {   
+  float: center;
+  text-align: center;
+  width: 100%;
+  font-family: 'Courier New', monospace;
+}
+
+.rightcolumn {
+  float: center;
+  width: 100%;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.centercolumn {
+  float: center;
+  width: 100%;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
+      
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: floralwhite;
+  font-family: 'Courier New', monospace;
+}
+      
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+  
+<body>
+
+<div class="header">
+  <h1> About Me </h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html" title = "Home"> Go Back to Home Page </a>
+</div>
+
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h2 style = "font-family: 'Courier New', monospace;"> MY LIFE </h2>
+      <img src="seattlewa.jpg" alt="Seattle" style="max-width:100%;height:auto;" padding=20 float=center>
+      <p style="font-family: 'Courier New', monospace;"> I was born and raised in Seattle, Washington in the Pacific Northwest part of the 
+      United States of America. Seattle and the surrounding areas in Washington are beautiful, and contain so much to discover in the outdoors,
+      from various mountain ranges, to the Pacific Ocean and Puget Sound, to countless rivers and Alpine lakes, to a desert in eastern Washington
+      that is a totally different climate from western Washington. I feel fortunate to have grown up here, and it will always be a special state to me.
+      My extended family is quite spread out around the world, and my parents love to travel too, so I have already been to a lot of cool places in the
+      world and across 4 continents. Now, I am 21 years old and a current undergraduate college student in Seattle, studying computer science. I have
+      continued to travel around the world with my family, friends, through academic and career competitions, and sometimes by myself. Now that I've
+      started to travel more without my parents and family there, my friends and I have started to truly understand how important safety is while traveling
+      in a new place. And so I want to inspire other people, especially young women like myself, to feel prepared and safe while traveling! </p>
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h2 style = "font-family: 'Courier New', monospace;"> MY TRAVELS </h2>
+      <img src="globaltravel.jpg" alt="Global Travel" style="max-width:100%;height:auto;" padding=20 float=center>
+      <p style="font-family:verdana;"> Although I grew up in the United States and have spent the majority of my life here, I've always been an international
+      traveler and drawn to experiencing other countries, cultures, foods, sights, and traditions. My first international trip was to Amsterdam, in the Netherlands,
+      when I was less than a year old! Since then, I've been to 29 of the 50 US states, 17 different countries, 4 of the 7 continents, and 3 of the 7 wonders of
+      the world. My goal is to eventually visit all 7 continents, all 7 wonders of the world, and as many countries as I can! </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="font-family: 'Courier New', monospace;"> My Bucket List (Next) Destinations: </h2>
+  <p style="font-family: 'Courier New', monospace;"> Peru (Machu Picchu), Brazil (Carnival Celebration), Ecuador (Amazon Rainforest), Kenya (Maasai Mara National
+  Reserve), Cairo (Egyptian Pyramids), China (Great Wall), Thailand (Wat Arun), Munich (Oktoberfest) </p> 
+</div>
+    
+</body>
+</html>
