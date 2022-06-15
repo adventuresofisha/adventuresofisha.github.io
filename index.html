@@ -1,12 +1,170 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      
+* {
+  box-sizing: border-box;
+}
+      
+.box {
+  float: left;
+  width: 11.11%;
+  padding: 50px;
+}
+      
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  background: lavenderblush;
+}
+
+.header {
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  text-align: center;
+  background: ivory;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: 'Courier New', monospace;
+}
+ 
+.header h2 {
+  font-family: 'Courier New', monospace;
+  padding: 20 px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #778899;
+}
+
+.topnav a {
+  float: left;
+  width: 11.11%;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin: auto;
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 100%;
+  font-family: 'Courier New', monospace;
+}
+
+.rightcolumn {
+  float: right;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: ivory;
+  font-family: 'Courier New', monospace;
+}
+      
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+  
 <body>
-<h1>Adventures of Isha</h1>
-<p>One of the greatest joys in life is to travel...</p>
-<p>"To travel is to take a journey into yourself". </p> 
-<p> Hi, my name is Isha! I grew up fortunate enough to travel often and went around the world quite a bit, and as I've entered my 20s I have started to travel
-  on my own more and more. Traveling is extremely valuable, both for personal growth and happiness. Exploring the world leads to more adventures, an open mind,
-  and plenty of stories to tell from the journey. Here, I'll give international travel advice and some tips for traveling safely, especially for young women
-  like myself. Cheers to more adventures! ~ Isha, 21 </p>  
+
+<div class="header">
+  <h1> Adventures of Isha </h1>
+</div>
+
+<div class="topnav">
+  <a href="aboutme.html" title = "About Me"> About Me </a>
+  <a href="destinations.html" title = "Destinations"> Destinations </a>
+  <a href="travelsafely.html" title = "Travel Safely"> Travel Safely </a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family: 'Courier New', monospace;"> One of the greatest joys in life is to travel... </h2>
+      <h5 style = "font-family: 'Courier New', monospace;"> Currently based in Seattle, traveling within the USA and internationally.</h5> 
+      <img src="worldmap.jpg" alt="World Map" style="max-width:100%;height:auto;" padding=20 float=center>
+      <p style="font-family: 'Courier New', monospace;"> "To travel is to take a journey into yourself". </p>
+      <p style="font-family: 'Courier New', monospace;"> Hi, my name is Isha! I grew up fortunate enough to travel often and went around the world quite a bit, and
+        as I've entered my 20s I have started to travel on my own more and more. Traveling is extremely valuable, both for personal growth and happiness. Exploring
+        the world leads to more adventures, an open mind, and plenty of stories to tell from your unique experiences. And just as important as adventure is your
+        safety - so I'll give tips and guidance for you to make your trips more safe, so you can relax and have fun exploring our planet. Here, my goal is to give
+        international travel advice and some tips for traveling safely based on your destination, especially for young women like myself, hoping to inspire, reassure,
+        and motivate you to start your own journey of traveling. Cheers to more adventures! ~ Isha, 21 </p>
+      <p style="font-family: 'Courier New', monospace;"> ~ </p>
+      <p style="font-family: 'Courier New', monospace;"> Quick facts: </p>
+      <p style="font-family: 'Courier New', monospace;"> US States Visited (29/50): Alabama, Alaska, Arizona, California, Colorado, Connecticut, Delaware, Florida,
+        Hawaii, Idaho, Illinois, Louisiana, Maine, Maryland, Massachusetts, Michigan, Mississippi, Montana, Nevada, New Hampshire, New Mexico, New York, Oregon,
+        Rhode Island, Texas, Utah, Vermont, Washington, Wyoming </p>
+      <p style="font-family: 'Courier New', monospace;"> Countries Visited (17): USA, Mexico, Canada, Australia, India, Japan, Sri Lanka, Bangladesh, Germany, UK,
+        France, Italy, Netherlands, Belgium, Switzerland, Korea, Poland </p>
+      <p style="font-family: 'Courier New', monospace;"> Continents Visited (4/7): North America, Europe, Asia, Australia </p>
+      <p style="font-family: 'Courier New', monospace;"> Wonders of the world Visited (3/7): Taj Mahal, Colosseum, Chichen Itza </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="font-family: 'Courier New', monospace;"> Questions? </h2>
+  <p style="font-family: 'Courier New', monospace;"> Contact me at adventuresofisha@gmail.com </p>
+  <p style="font-family: 'Courier New', monospace;"> Copyright 2022 Isha Jodh </p> 
+</div>
+    
 </body>
 </html>
