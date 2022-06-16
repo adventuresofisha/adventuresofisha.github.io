@@ -1,1 +1,192 @@
-yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      
+* {
+  box-sizing: border-box;
+}
+      
+.box {
+  float: left;
+  width: 100%;
+  padding: 50px;
+}
+      
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  background: lavenderblush;
+}
+
+.header {
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  text-align: center;
+  background: floralwhite;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: 'Courier New', monospace;
+}
+ 
+.header h2 {
+  font-family: 'Courier New', monospace;
+  padding: 20 px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #778899;
+}
+
+.topnav a {
+  float: left;
+  width: 100%;
+  display: block;
+  color: black;
+  background-color: #e2e2e2;
+  text-align: center;
+  margin: auto;
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #696969;
+  color: #DCDCDC;
+}
+
+.leftcolumn {   
+  float: center;
+  text-align: center;
+  width: 100%;
+  font-family: 'Courier New', monospace;
+}
+
+.rightcolumn {
+  float: center;
+  width: 100%;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.centercolumn {
+  float: center;
+  width: 100%;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
+      
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: floralwhite;
+  font-family: 'Courier New', monospace;
+}
+      
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+  
+<body>
+
+<div class="header">
+  <h1> Destinations </h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html" title = "Home"> Go Back to Home Page </a>
+</div>
+
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h2 style = "font-family: 'Courier New', monospace;"> NORTH AMERICA </h2>
+      <img src="northamerica.png" alt="North America" style="max-width:300px;height:300px;" padding=20 float=center>
+      <p style="font-family: 'Courier New', monospace;"> TO-DO </p>
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h2 style = "font-family: 'Courier New', monospace;"> EUROPE </h2>
+      <img src="europe.png" alt="Europe" style="max-width:300px;height:300px;" padding=20 float=center>
+      <p style="font-family: 'Courier New', monospace;"> TO-DO </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h2 style = "font-family: 'Courier New', monospace;"> ASIA </h2>
+      <img src="asia.jpg" alt="Global Travel" style="max-width:300px;height:300px;" padding=20 float=center>
+      <p style="font-family: 'Courier New', monospace;"> TO-DO </p>
+    </div>
+  </div>
+</div>  
+  
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h2 style = "font-family: 'Courier New', monospace;"> AUSTRALIA </h2>
+      <img src="australia.jpg" alt="Global Travel" style="max-width:300px;height:300px;" padding=20 float=center>
+      <p style="font-family: 'Courier New', monospace;"> TO-DO </p>
+    </div>
+  </div>
+</div>
+  
+<div class="footer">
+  <h2 style="font-family: 'Courier New', monospace;"> Next Stops: </h2>
+  <p style="font-family: 'Courier New', monospace;"> Peru (Machu Picchu), Brazil (Carnival Celebration), Ecuador (Amazon Rainforest), Kenya (Maasai Mara National
+  Reserve), Cairo (Egyptian Pyramids), China (Great Wall), Thailand (Wat Arun), Munich (Oktoberfest) </p> 
+</div>
+    
+</body>
+</html>
